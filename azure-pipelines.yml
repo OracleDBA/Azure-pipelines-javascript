@@ -5,7 +5,7 @@ pool:
   
 variables:
   - imageName: 'nodejssample:$(Build.BuildId)'
-  - npm-group
+  - group: npm-group
   # define two more variables dockerId and dockerPassword in the build pipeline in UI
 
 steps:
