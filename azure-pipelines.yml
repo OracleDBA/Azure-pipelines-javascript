@@ -1,6 +1,7 @@
 # Build Docker image for this app using Azure Pipelines
 # https://docs.microsoft.com/azure/devops/pipelines/languages/docker?view=vsts
 pool:
+  name: 'azure-pipelines'
   vmImage: 'ubuntu-latest'
   
 variables:
