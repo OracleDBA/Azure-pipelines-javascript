@@ -4,7 +4,8 @@ pool:
   vmImage: 'ubuntu-latest'
   
 variables:
-  - imageName: 'nodejssample:$(Build.BuildId)'
+  - name: imageName
+    value: 'nodejssample:$(Build.BuildId)'
   - group: npm-group
   # define two more variables dockerId and dockerPassword in the build pipeline in UI
 
